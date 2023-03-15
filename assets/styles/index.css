@@ -364,7 +364,8 @@ img {
 }
 
 .hero {
-  background: url(../../../assets/img/bg-image.png);
+  background: url(../../assets/img/bg-image.png);
+  background-color: #f4f4f4;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
