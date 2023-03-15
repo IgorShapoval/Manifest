@@ -1,0 +1,63 @@
+.footer {
+    padding: 50px 0;
+    background-color: $c-bg-footer;
+    text-align: center;
+
+    &__box {
+        @include breakpoint("desktop") {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        font-size: $fs-footer-title;
+        line-height: 1.31;
+        color: $c-black;
+        margin-bottom: 20px;
+    }
+    &__tel-box {
+        margin-bottom: 15px;
+    }
+    &__tel {
+        font-size: $fs-footer-link;
+        letter-spacing: 0.1em;
+        color: $c-black;
+
+        &:hover,
+        &:focus {
+            color: $c-active;
+        }
+    }
+    &__email-box {
+        margin-bottom: 50px;
+
+        @include breakpoint("desktop") {
+            margin-bottom: 0;
+        }
+    }
+    &__email {
+        font-size: $fs-footer-link;
+        letter-spacing: 0.1em;
+        color: $c-black;
+
+        &:hover,
+        &:focus {
+            color: $c-active;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        @include breakpoint("desktop") {
+            margin-bottom: 0;
+        }
+    }
+}

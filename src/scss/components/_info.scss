@@ -1,0 +1,57 @@
+.info {
+    padding-bottom: 70px;
+
+    @include breakpoint("desktop") {
+        padding: 90px 0;
+    }
+
+    &__body {
+        @include breakpoint("desktop") {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__title-box {
+        @include breakpoint("desktop") {
+            width: 470px;
+        }
+    }
+
+    &__title {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        font-size: $fs-24;
+        letter-spacing: 0.1em;
+        color: $c-black;
+    }
+
+    &__svg {
+        width: 23px;
+        margin-bottom: 35px;
+
+        &:hover,
+        &:focus {
+            fill: $c-active;
+        }
+    }
+
+    &__text-box {
+        @include breakpoint("tablet") {
+            padding-left: 155px;
+            text-align: end;
+        }
+
+        @include breakpoint("desktop") {
+            padding-left: 0;
+            text-align: unset;
+            width: 470px;
+        }
+    }
+
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}

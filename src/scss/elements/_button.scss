@@ -1,0 +1,21 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: $fs-main-text;
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    color: $c-white;
+    background-color: $c-gray;
+    border: none;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+
+    &:hover,
+    &:focus {
+        background-color: $c-active;
+    }
+}

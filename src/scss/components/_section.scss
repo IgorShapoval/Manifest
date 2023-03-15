@@ -1,0 +1,47 @@
+.section {
+    padding-bottom: 70px;
+
+    @include breakpoint("desktop") {
+        padding: 90px 0;
+    }
+
+    &__box {
+        @include breakpoint("tablet") {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 600;
+        font-size: $fs-section-title;
+        line-height: 1.29;
+        color: $c-black;
+        margin-bottom: 10px;
+        @include breakpoint("tablet") {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        letter-spacing: 0.1em;
+        color: $c-second-text;
+        transition: all 0.5s linear;
+        margin-bottom: 30px;
+
+        &:hover,
+        &:focus {
+            color: $c-active;
+        }
+
+        @include breakpoint("tablet") {
+            margin-bottom: 0;
+        }
+    }
+}

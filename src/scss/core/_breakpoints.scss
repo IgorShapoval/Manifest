@@ -1,0 +1,17 @@
+$breakpoint-mobile: 320px;
+$breakpoint-mobile-tablet: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1440px;
+
+$breakpoints: (
+    "mobile": $breakpoint-mobile,
+    "mobile-tablet": $breakpoint-mobile-tablet,
+    "tablet": $breakpoint-tablet,
+    "desktop": $breakpoint-desktop,
+);
+
+@mixin breakpoint($br: "mobile") {
+    @media screen and (min-width: map-get($breakpoints, $br)) {
+        @content;
+    }
+}

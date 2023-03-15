@@ -1,0 +1,7 @@
+.post {
+    &__list {
+        @include breakpoint("desktop") {
+            display: flex;
+        }
+    }
+}

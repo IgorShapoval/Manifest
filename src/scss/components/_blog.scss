@@ -1,0 +1,86 @@
+.blog {
+    padding: 70px 0;
+    @include breakpoint("desktop") {
+        padding: 90px 0;
+    }
+
+    &__main-title {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        font-size: $fs-blog;
+        line-height: 1.33;
+        color: $c-black;
+        text-align: center;
+        margin-bottom: 50px;
+
+        @include breakpoint("tablet") {
+            text-align: start;
+        }
+    }
+    &__list {
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        @include breakpoint("tablet") {
+            display: flex;
+            gap: 20px;
+
+            &:nth-child(2n + 1) {
+                flex-direction: row-reverse;
+                justify-content: start;
+            }
+        }
+
+        @include breakpoint("desktop") {
+            gap: 30px;
+            align-items: center;
+            justify-content: end;
+        }
+    }
+
+    &__info {
+        @include breakpoint("tablet") {
+            width: 50%;
+        }
+
+        @include breakpoint("desktop") {
+            width: 450px;
+        }
+    }
+    &__title {
+        font-family: "Red Hat Display";
+        font-weight: 500;
+        font-size: $fs-card-title-mobile;
+        letter-spacing: 0.1em;
+        color: $c-black;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        letter-spacing: 0.1em;
+        color: $c-second-text;
+        margin-bottom: 30px;
+    }
+    &__date {
+        letter-spacing: 0.1em;
+        color: $c-second-text;
+        margin-bottom: 40px;
+    }
+    &__text {
+        margin-bottom: 37px;
+        @include breakpoint("tablet") {
+            margin-bottom: 0;
+        }
+    }
+    &__image {
+        @include breakpoint("tablet") {
+            width: 50%;
+        }
+
+        @include breakpoint("desktop") {
+            width: 570px;
+        }
+    }
+}

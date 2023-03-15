@@ -1,0 +1,22 @@
+.header-nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 42px;
+    }
+    &__item {
+    }
+    &__link {
+        font-size: $fs-nav;
+        line-height: 17px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: $c-black;
+
+        &:hover,
+        &:focus {
+            color: $c-active;
+        }
+    }
+}
