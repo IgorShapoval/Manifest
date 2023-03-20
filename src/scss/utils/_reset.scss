@@ -22,7 +22,8 @@ body {
     color: $c-main-text;
 }
 
-img {
+img,
+picture {
     display: inline-block;
     vertical-align: top;
     width: 100%;

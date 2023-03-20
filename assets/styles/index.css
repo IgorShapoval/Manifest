@@ -58,7 +58,8 @@ body {
   color: #565656;
 }
 
-img {
+img,
+picture {
   display: inline-block;
   vertical-align: top;
   width: 100%;
@@ -482,12 +483,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .post__list {
-    display: flex;
-  }
-}
-
 .popular__list {
   margin-bottom: 50px;
 }
@@ -565,6 +560,104 @@ img {
   margin-bottom: 15px;
 }
 
+.study {
+  padding-top: 18px;
+}
+.study__name {
+  line-height: 1.5;
+  letter-spacing: 0.5em;
+  color: #000000;
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .study__name {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .study__name {
+    margin-bottom: 30px;
+  }
+}
+.study__main-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.67;
+  color: #000000;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .study__main-title {
+    font-size: 33px;
+    line-height: 1.52;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .study__main-title {
+    margin-bottom: 70px;
+    font-size: 48px;
+    line-height: 1.33;
+  }
+}
+.study__picture {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 768px) {
+  .study__picture {
+    margin-bottom: 90px;
+  }
+}
+.study__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .study__title {
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+}
+.study__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1440px) {
+  .study__text {
+    max-width: 570px;
+  }
+}
+
+.study__list {
+  padding: 70px 0;
+}
+
+.study-list__item:not(:last-child) {
+  padding-bottom: 70px;
+}
+.study-list__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .study-list__title {
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+}
+.study-list__picture {
+  margin-bottom: 20px;
+}
 .footer {
   padding: 50px 0;
   background-color: #f4f4f4;
